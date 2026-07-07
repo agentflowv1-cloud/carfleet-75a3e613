@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .vehicle-info {
+            margin-bottom: 20px;
+        }
+        .vehicle-info label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .vehicle-info span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Details</h1>
+        <div class="vehicle-info">
+            <label>Make:</label>
+            <span id="make"></span>
+        </div>
+        <div class="vehicle-info">
+            <label>Model:</label>
+            <span id="model"></span>
+        </div>
+        <div class="vehicle-info">
+            <label>Year:</label>
+            <span id="year"></span>
+        </div>
+        <div class="vehicle-info">
+            <label>Mileage:</label>
+            <span id="mileage"></span>
+        </div>
+        <div class="vehicle-info">
+            <label>Color:</label>
+            <span id="color"></span>
+        </div>
+    </div>
+    <script>
+        // Get vehicle data from API or database
+        const vehicleData = {
+            make: "Toyota",
+            model: "Camry",
+            year: 2022,
+            mileage: 20000,
+            color: "Blue"
+        };
+        
+        // Populate vehicle details page with data
+        document.getElementById("make").innerText = vehicleData.make;
+        document.getElementById("model").innerText = vehicleData.model;
+        document.getElementById("year").innerText = vehicleData.year;
+        document.getElementById("mileage").innerText = vehicleData.mileage;
+        document.getElementById("color").innerText = vehicleData.color;
+    </script>
+</body>
+</html>
